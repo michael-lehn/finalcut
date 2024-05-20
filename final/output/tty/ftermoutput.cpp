@@ -517,9 +517,9 @@ inline auto FTermOutput::isDefaultPaletteTheme() -> bool
     "default16DarkColorPalette"
   };
 
-  const auto& iter = std::find ( default_themes.cbegin()
-                               , default_themes.cend()
-                               , FColorPalette::getInstance()->getClassName() );
+  const auto iter = std::find ( default_themes.cbegin()
+                              , default_themes.cend()
+                              , FColorPalette::getInstance()->getClassName() );
   return iter != default_themes.cend();  // Default theme found
 }
 
